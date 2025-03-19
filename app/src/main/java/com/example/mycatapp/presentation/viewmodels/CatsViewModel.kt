@@ -1,4 +1,4 @@
-package com.example.mycatapp.viewmodels
+package com.example.mycatapp.presentation.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

@@ -1,4 +1,4 @@
-package com.example.mycatapp.ui
+package com.example.mycatapp.presentation.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -26,7 +26,7 @@ import coil.compose.AsyncImage
 import coil.compose.rememberAsyncImagePainter
 import com.example.mycatapp.data.models.CatsItemModel
 import com.example.mycatapp.data.utils.ApiResponse
-import com.example.mycatapp.viewmodels.CatsViewModel
+import com.example.mycatapp.presentation.viewmodels.CatsViewModel
 
 @Composable
 fun CatScreen(

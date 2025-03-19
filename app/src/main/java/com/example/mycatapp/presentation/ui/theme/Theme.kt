@@ -1,4 +1,4 @@
-package com.example.mycatapp.ui.theme
+package com.example.mycatapp.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
