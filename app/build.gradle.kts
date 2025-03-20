@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.kotlin.kapt) // Kotlin KAPT
     alias(libs.plugins.hilt.android) // HILT Plugin
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
+    id("kotlin-parcelize") // Required for @Parcelize support
 
 }
 
@@ -123,5 +124,18 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Mockk for Unit Tests
+    testImplementation("io.mockk:mockk:1.13.8")
+    testImplementation("io.mockk:mockk-agent-jvm:1.13.8") // Required for mocking final classes
+
+    // Coroutines Test (You already have this, but just to confirm)
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+
+    // JUnit
+    testImplementation("junit:junit:4.13.2")
+
+    // Turbine (For testing Flows)
+    testImplementation("app.cash.turbine:turbine:1.0.0")
 
 }
