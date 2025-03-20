@@ -1,8 +1,11 @@
 package com.example.mycatapp.data.models
 
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class BreedModel(
     @SerializedName("adaptability")
     val adaptability: Int?,
@@ -80,4 +83,4 @@ data class BreedModel(
     val weight: WeightModel?,
     @SerializedName("wikipedia_url")
     val wikipediaUrl: String?
-)
+) : Parcelable
